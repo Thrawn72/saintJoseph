@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/* CSS Document */
+
+li a img {
+	margin-top: 8px;
+}
+
+#portfolio {
+	display: block;
+	margin-top: 20px;
+}
+
+#portfolio li {
+	float: left;
+	width:auto;
+	max-width: 300px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	display: block;
+}
+
+#portfolio li a {
+	display: block;
+	padding-top: 0px;
+	padding-right: 6px;
+	padding-left: 6px;
+	padding-bottom: 6px;
+	background: #fff;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-box-shadow: 1px 2px 2px rgba(0,0,0,0.25);
+	-moz-box-shadow: 1px 2px 2px rgba(0,0,0,0.25);
+	box-shadow: 1px 2px 2px rgba(0,0,0,0.25);
+	height: 105px;
+}
+
+#portfolio li img{
+	width: 100px;
+	height: 95px;
+	}
+
+.mfp-title {
+  font-size: 1.2em;
+  color: #ddd !important;
+  font-weight: 700;
+}
+
+/** clearfix **/
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix { display: inline-block; }
+ 
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
+
+
+/** media queries **/
+@media screen and (max-width : 754px ){
+  #portfolio li {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #portfolio { 
+    text-align: center;
+  }
+  
+  #portfolio li {
+    float: none;
+    display: inline-block;
+    width: auto;
+    margin-bottom: 30px;
+  }
+}

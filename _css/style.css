@@ -1,0 +1,464 @@
+@charset "UTF-8";
+/*defalts */
+body {
+	display: flex;
+  	min-height: 100vh;
+  	flex-direction: column;
+    background-image: url(https://www.transparenttextures.com/patterns/asfalt-dark.png);
+    background-color: #a8a183;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+	
+    }
+.content{
+	 flex: 1;
+}
+h1 h2 h3 h4 h5 {
+	line-height: 2.0em;
+}
+
+p {
+	line-height: 2.0em;
+
+}
+    
+nav {
+    margin-bottom: 35px;
+    padding-bottom: 30px;
+    width: 100%
+}
+
+/*Strip the ul of padding and list styling*/
+nav ul {
+	list-style-type:none;
+	margin:0px;
+	padding:5px;
+	position: absolute;
+    width: 97%;
+    background: #123456;
+}
+
+/*Create a horizontal list with spacing*/
+nav li {
+	display:inline-block;
+	float: left;
+	margin-right: 1px;
+
+}
+
+/*Style for menu links*/
+nav li a {
+	display:block;
+	min-width:140px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #F2F0ED;
+	background: #123456;
+	text-decoration: none;
+}
+
+/*Hover state for top level links*/
+nav li:hover a {
+	background: #a8a183;
+}
+
+/*Style for dropdown links*/
+nav li:hover ul a {
+	background: #f3f3f3;
+	color: #2f3036;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Hover state for dropdown links*/
+nav li:hover ul a:hover {
+	background: #8A8A86;
+	color: #F2F0ED;
+}
+
+/*Hide dropdown links until they are needed*/
+nav li ul {
+	display: none;
+}
+
+/*Make dropdown links vertical*/
+nav li ul li {
+	display: block;
+	float: none;
+}
+
+/*Prevent text wrapping*/
+nav li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Display the dropdown on hover*/
+nav ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #F2F0ED;
+	background: #123456;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+    -webkit-appearance: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+/* end nav  */
+.logo_home{
+	display: flex;
+} 
+.sketch {
+	padding: 10px 0px 0px 15px; 
+}
+    
+.logo{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 25%;
+	
+}
+.sketch2 {
+	padding: 10px 25px 0px 0px; 
+	
+}
+	/* end header*/
+	
+	/*index page*/
+.indexH1 {
+	margin: 20px 10px 20px 10px; 
+	padding-top: 25px; 
+	text-align: center;
+	width: 95%;
+}
+
+.indexFather{
+	float: left;
+}
+.indexH2 {
+	text-align: center;
+	padding-top: 15px;
+}
+.prayer {
+	margin: 10px 15px 15px 20px;
+	padding: 0px 20px 10px 20px;
+	clear: right;
+}
+.center {
+	display: flex;
+}
+
+  .mass {
+	  display: flex;
+       width: 45%;
+       margin: 0px 0px 0px 15px; 
+    }
+    
+    .mass li {
+        list-style-type: none;
+    }
+    
+    .doc {
+		display: block;
+        width: 45%;
+		margin: 20px 0px 0px 15px;
+		
+    }
+    
+    #bull {
+        width: 40%;
+        display: inline-block;
+        clear: right;
+        margin-left: 10px;
+        margin-right: auto;
+        margin-top: -44px;
+        
+    }
+
+#bull li {
+    list-style: none;
+}
+    #bull a {
+        color: #000;
+    }
+
+   
+.prayer::first-letter {
+	font-size: 1.5em;
+}
+
+#rev a {
+    color: #000;
+}
+	/*end index*/
+	
+	/*Documents*/
+	
+	
+.past {
+	padding-top: 10px;
+	text-align: center;
+	width: 100%;
+}
+.past img {
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+}
+.past a{
+	display:block;
+	margin-bottom: 20px;
+	}
+.adobe {
+	text-align: center;
+}
+	/*end Documents */
+	
+	
+	/*Father */
+.father {
+	width: 95%;
+	padding-right: 0px;
+	margin-left: 20px;
+	text-align: left;
+}
+.father h1 {
+	text-align: center;
+}
+.father p {
+	text-indent: 20px;
+	text-align: left;
+}
+	
+	/*end Father */
+	
+	
+	/* ministries */
+.page {
+	text-align: justify;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.page h1 {
+	text-align: center;
+}
+
+	/* end Ministries */
+	
+	/*History */
+	
+.history {
+	text-align: justify;
+	width: 96%;
+	margin-left: 15px;
+}
+.history h1, h2{
+	text-align: center;
+}
+	/*end History*/
+	
+	/*contact*/
+.contact {
+	margin-left: 15px;
+	margin-right: 15px;
+    width: 100%;
+}
+.contact h1 {
+	text-align: center;
+}
+.contact .conadd {
+	width: 46%;
+	margin-left: 40px;
+    float: left;
+    margin-bottom: 15px;
+}
+.contact p {
+	text-align: left;
+}
+.contact ul {
+	float: right;
+	width: 42%;
+	margin-left: 5px;
+	margin-top: 0px;
+
+}
+
+.contact li {
+    list-style: none;
+}
+.contact .map {
+	width: 45%;
+	padding-top: 175px;
+	margin-left: 15px;
+	margin-top: -100px;
+}
+
+.contact iframe{
+	width: 100%;
+}
+	
+	/*end contact */
+	
+	/*Photos */
+.vidlink {
+	text-align: center;
+}
+	/*end Photos */
+	
+	/*Video */
+.video {
+	text-align: center;
+}
+
+	/*end Video */
+	
+	
+	
+	/*Footer */
+footer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: 25px;
+	margin-bottom: -15px;
+	background-color: #123456;
+    padding-top: 10px;
+    color: #FFCB66;
+    clear: both;
+   
+}
+    footer a {
+        text-decoration: none;
+    }
+.joseph {
+	
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+}
+    
+    .jocaption {
+        display: table-caption;
+        caption-side: bottom;
+        text-align: center;
+		
+    }
+
+.jocaption ul {
+	margin-left: -45px;
+}
+    
+
+    footer li {
+        list-style-type:none;
+		
+    }
+    
+    footer p {
+        text-align: center;
+		
+        
+    }
+
+	/*end Footer*/
+
+
+	/*back to top*/
+.back-to-top {
+    position: fixed;
+    bottom: 2em;
+    right: 0px;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(235, 235, 235, 0.80);
+    font-size: 12px;
+    padding: 1em;
+    display: none;
+}
+
+.back-to-top:hover {    
+    background-color: rgba(135, 135, 135, 0.50);
+}
+
+	/*end back to top*/
+
+@media screen and (max-width : 760px){
+	/*Make dropdown links appear inline*/
+	nav ul {
+		position: static;
+		display: none;
+	}
+	/*Create vertical spacing*/
+	nav li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	nav ul li, li a {
+		width: 100%;
+	}
+	/*Display 'show menu' link*/
+	.show-menu {
+		display:block;
+	}
+    .sketch {
+        display: none;
+    }
+    
+    .logo {
+        padding: 15px;
+ 
+    }
+    
+    .sketch2 {
+        display: none;
+    }
+    
+    
+    #bull {
+       padding-top: 45px;
+    }
+	.center {
+		display: block;
+		width: 100%;
+	}
+    .mass {
+		width: 75%;
+		margin: 15px;
+    }
+    .doc {
+		width: 95%;
+		text-align: center;
+    }
+    
+	.indexFather{
+		margin: 5px 10px 5px 10px;
+	}
+	
+	
+        
+}
+
+
+
